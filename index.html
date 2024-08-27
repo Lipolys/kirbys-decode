@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Decriptador de Textos do Kirby</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <main class="main-layout">
+        <div class="main-layout-left">
+            <img class="kirby-logo" src="assets/kirby_logo.png" alt="Kirby sentado em sua estrela">
+        </div>
+        <section class="input">
+            <div class="input-warning">
+                <img class="attention" src="assets/attention.png" alt="Icone de exclamação, atenção!">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <label class="input-area">
+                <textarea class="input-area-text">Digite o seu texto</textarea>
+            </label>
+            <div class="input-div-aux">
+
+                <div class="input-buttons">
+                    <button onclick="criptografar()" class="button-pink">Criptografar</button>
+                    <button onclick="descriptografar()" class="button-white">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="output">
+            <div class="output-no-message" id="output-no-message">
+                <img class="kirby-umbrella" src="assets/kirby_umbrella.png" alt="Kirby caindo com seu guarda-chuva">
+                <p class="output-no-message-phrase"><strong class="output-no-message-strong">Nenhuma mensagem encontrada</strong></p>
+                <p class="output-no-message-phrase">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <p style="display: none" class="output-text" id="output-text"></p>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

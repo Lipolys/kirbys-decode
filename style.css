@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root {
+    --rosa-corpo: #FFB6C1;
+    --rosa-bochecha: #F988BE;
+    --rosa-pe: #CC4668;
+    --azul-olho: #2E41D2;
+    --branco: #ffffff;
+
+    --fonte: "Patrick Hand", cursive
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--rosa-corpo);
+    box-sizing: content-box;
+}
+
+.main-layout {
+    display: flex;
+    height: 100vh;
+}
+
+.kirby-logo {
+    width: 120px;
+    height: 120px;
+    padding: 35px 0 0 35px;
+}
+
+.input {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5%;
+    width: 50%;
+}
+
+.input-area{
+    height: 100%;
+    width: 100%;
+}
+
+.input-area-text {
+    border: none;
+    resize: none;
+    font-family: var(--fonte), cursive;
+    font-size: 2rem;
+    color: var(--rosa-pe);
+    background-color: var(--rosa-corpo);
+    height: 95%;
+    width: 100%;
+}
+
+.attention {
+    width: 1rem;
+    height: 1rem;
+}
+
+.input-warning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+    font-family: var(--fonte), sans-serif;
+    font-size: 1rem;
+    color: var(--azul-olho)
+}
+
+.input-div-aux {
+    width: 100%;
+}
+
+.input-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1rem;
+    gap: 2rem;
+
+}
+
+.button-pink {
+    border-radius: 24px;
+    background: var(--rosa-pe);
+    padding: 20px 180px;
+    font-size: 1rem;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    cursor: pointer;
+    font-family: var(--fonte), sans-serif;
+}
+
+.button-white {
+    border-radius: 24px;
+    background: var(--branco);
+    padding: 20px 180px;
+    font-size: 1rem;
+    border: 2px solid var(--rosa-pe);
+    color: var(--rosa-pe);
+    cursor: pointer;
+    font-family: var(--fonte), sans-serif;
+}
+
+.output {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    background-color: var(--branco);
+    border-radius: 24px;
+    height: 90%;
+    width: 25%;
+    margin: 25px;
+}
+
+.output-no-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-no-message-phrase {
+    font-family: var(--fonte), cursive;
+    font-size: 1.5rem;
+    padding: 0 40px;
+    text-align: center;
+    color: var(--rosa-corpo)
+}
+
+.output-no-message-strong {
+    font-family: var(--fonte), cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--azul-olho)
+}
+
+.kirby-umbrella {
+    height: 390px;
+}
+
+.output-text {
+    color: var(--rosa-bochecha);
+    font-family: var(--fonte), cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 5px 5px 0;
+}
